@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBSender", "SBSender\SBSender.csproj", "{B5A63B3F-70C3-4188-9169-213BB6AEC281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBReceiver", "SBReceiver\SBReceiver.csproj", "{EF29C771-9FF8-46A4-AF29-814838FC8D3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBShared", "SBShared\SBShared.csproj", "{CDBFB3BE-6D35-47AB-B491-4396F019EC31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5A63B3F-70C3-4188-9169-213BB6AEC281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A63B3F-70C3-4188-9169-213BB6AEC281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A63B3F-70C3-4188-9169-213BB6AEC281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A63B3F-70C3-4188-9169-213BB6AEC281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF29C771-9FF8-46A4-AF29-814838FC8D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF29C771-9FF8-46A4-AF29-814838FC8D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF29C771-9FF8-46A4-AF29-814838FC8D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF29C771-9FF8-46A4-AF29-814838FC8D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDBFB3BE-6D35-47AB-B491-4396F019EC31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBFB3BE-6D35-47AB-B491-4396F019EC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBFB3BE-6D35-47AB-B491-4396F019EC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBFB3BE-6D35-47AB-B491-4396F019EC31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

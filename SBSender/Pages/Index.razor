@@ -1,0 +1,38 @@
+﻿@page "/"
+@using SBShared
+@using SBSender.Services
+@inject IQueueService queue
+@inject IConfiguration _Configuration
+<PageTitle>Index</PageTitle>
+
+<P></P>
+@code
+{
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        
+    }
+}
+Welcome to your new app.
+<EditForm Model="@_person" OnValidSubmit="@PublishMessage">
+    <ValidationSummary></ValidationSummary>
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input id="firstName" class="form-control" @bind="_person.FirstName"/>
+        <label for="lastName">Last Name</label>
+        <input id="lastName" class="form-control" @bind="_person.LastName"/>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+@code
+{
+    Person _person = new Person();
+
+    private async Task PublishMessage()
+    {
+        await queue.SendMessageAsync(_person, "personqueue");
+    }
+}
